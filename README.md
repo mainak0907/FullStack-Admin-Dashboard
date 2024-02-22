@@ -49,6 +49,9 @@ In React, when a component re-renders, all of its code runs again, including any
 
 useMemo allows you to memoize the result of a computation, meaning that React will only recompute the value when one of the dependencies has changed. If the dependencies haven't changed since the last render, useMemo will return the cached result instead of recomputing it, which can help optimize performance by avoiding unnecessary calculations.
 
+styled is a utility function provided by Material-UI for creating styled components,
+while Box is a layout component provided by Material-UI for creating simple box containers.
+
 ## Routing ( React Router v6 )
 
 " Routes ": This is a component provided by React Router v6 that acts as a container for defining the routing configuration of your application. It wraps all the routes.
@@ -58,3 +61,5 @@ useMemo allows you to memoize the result of a computation, meaning that React wi
 <Route path="/" element={<Navigate to="/dashboard" replace />} />: This is a route configuration for the root URL ("/"). When the root URL is matched, it renders a <Navigate> component. The <Navigate> component is used for navigation in React Router v6. In this case, it immediately navigates to the "/dashboard" URL and replaces the current entry in the history stack. This effectively redirects users from the root URL to the /dashboard URL.
 
 <Route path="/dashboard" element={<Dashboard/>}/>: This is another route configuration for the "/dashboard" URL. When the "/dashboard" URL is matched, it renders the <Dashboard/> component. This is likely the main component rendered for the dashboard page.
+
+In react-router-dom, an Outlet is a component that serves as a placeholder where child routes will be rendered. It is used within nested route structures, typically within parent components that define routes.
