@@ -40,3 +40,21 @@ createTheme is a function provided by Material-UI that allows you to create a cu
 themeSettings:
 
 themeSettings appears to be a custom module or object where you define the configuration settings for your theme. It likely contains values for properties such as colors, typography variants, spacing, breakpoints, etc. This object is used as an argument to the createTheme function to generate the actual theme object that will be applied to your application.
+
+The useSelector hook is a feature provided by the React-Redux library that allows React components to access the state stored in a Redux store.
+
+useMemo is a React Hook that is used for memoizing expensive calculations in functional components.
+
+In React, when a component re-renders, all of its code runs again, including any calculations or function calls inside the component body. This can sometimes lead to performance issues, especially if these calculations are expensive or time-consuming.
+
+useMemo allows you to memoize the result of a computation, meaning that React will only recompute the value when one of the dependencies has changed. If the dependencies haven't changed since the last render, useMemo will return the cached result instead of recomputing it, which can help optimize performance by avoiding unnecessary calculations.
+
+## Routing ( React Router v6 )
+
+" Routes ": This is a component provided by React Router v6 that acts as a container for defining the routing configuration of your application. It wraps all the routes.
+
+<Route element={<Layout/>}>: This is a route configuration that renders the <Layout/> component when the URL matches. The <Layout/> component is presumably a layout component that contains common UI elements or provides a structure for rendering other components within it. This is often used for layouts that need to be consistently applied across multiple pages.
+
+<Route path="/" element={<Navigate to="/dashboard" replace />} />: This is a route configuration for the root URL ("/"). When the root URL is matched, it renders a <Navigate> component. The <Navigate> component is used for navigation in React Router v6. In this case, it immediately navigates to the "/dashboard" URL and replaces the current entry in the history stack. This effectively redirects users from the root URL to the /dashboard URL.
+
+<Route path="/dashboard" element={<Dashboard/>}/>: This is another route configuration for the "/dashboard" URL. When the "/dashboard" URL is matched, it renders the <Dashboard/> component. This is likely the main component rendered for the dashboard page.
